@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Autobazar</title>
 </head>
@@ -33,10 +35,42 @@
       </header>
 
 
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/heightcar.jfif" class="d-block w-100" alt="heightcar" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/GOOFY.jpeg" class="d-block w-100" alt="GOOFY" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ufo.jpg" class="d-block w-100" alt="ufo" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat.jpg" class="d-block w-100" alt="cat" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/image.webp" class="d-block w-100" alt="image" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/schlong.jpg" class="d-block w-100" alt="schlong" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/xd.jpg" class="d-block w-100" alt="xd" height="500px" style="padding-left: 100px; padding-right: 100px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
       
-
-
-
       <div class="container text-center mt-5">
         <div class="row">
             <div class="col align-items-stretch">
@@ -61,8 +95,24 @@
                         <p class="card-text">Example of text in card body</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <button type="button" class="btn btn-primary">More Details</button>
+                        <li class="list-group-item">  
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Datails</button>
+  
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </li>
                     </ul>
                 </div>
@@ -95,6 +145,17 @@
                     </ul>
                 </div>
             </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Lorem Ipsum
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem rerum quisquam ut, expedita libero quas veniam debitis. Non aliquid rem molestiae quidem aperiam ratione, corporis earum facere asperiores pariatur!</div>
+                  </div>
+                </div>
             <div class="container text-center mt-5">
                 <div class="row">
                     <div class="col align-items-stretch">
@@ -153,5 +214,15 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Lorem Ipsum #2
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi hic quae deserunt, blanditiis error quis dignissimos perspiciatis laborum molestiae fugit inventore provident recusandae nostrum pariatur nulla quibusdam cum aperiam! Minima.</div>
+                        </div>
+                      </div>
 </body>
 </html>
