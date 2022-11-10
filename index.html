@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Autobazar</title>
+    
 </head>
 <body>
     <header class="p-3 text-bg-dark">
@@ -20,7 +21,8 @@
             </a>
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="vrakoviste.html" class="nav-link px-2 text-white">Vrakoviste</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
               <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
@@ -33,6 +35,32 @@
           </div>
         </div>
       </header>
+      <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+        <a class="navbar-brand" href="#">ScrollSpy</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+        </ul>
+      </nav>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            <img src="img/favicon.ico" class="rounded me-2" alt="..." style="height: 20px; width: 20px;">
+            <strong class="me-auto">Anna ti posílá 4 fotky. </strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+            Podívej se na mé nahé videa!
+            Zdarma klikněte pro uspokojení.
+            </div>
+        </div>
+        </div>
 
 
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -69,19 +97,10 @@
         </button>
       </div>
 
-      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Show Cards</a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Show Cards</a>
       
-      <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
-        <a class="navbar-brand" href="#">ScrollSpy</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-        </ul>
-      </nav>
+      
+      
 
       <div class="container text-center mt-5">
         <div class="row" id="scrollspyHeading1">
@@ -94,7 +113,11 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                            <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -123,7 +146,11 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">  
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                        <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -152,7 +179,11 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                            <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -181,7 +212,11 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                            <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -223,7 +258,11 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                                    <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -252,7 +291,11 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                                    <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -281,7 +324,11 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                                    <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -310,7 +357,11 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More Details</button>
+                                    <span data-bs-target="#exampleModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Wanna know more details?">
+                                More Details
+                              </button>
+                            </span>
   
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -341,4 +392,12 @@
                         </div>
                       </div>
 </body>
+
 </html>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const toastSelector = document.getElementById('liveToast')
+    const toast = new bootstrap.Toast(toastSelector)
+    toast.show()
+</script>
